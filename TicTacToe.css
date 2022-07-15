@@ -1,0 +1,108 @@
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgb(48, 134, 134);
+   color:cornsilk;
+   font-style: bold;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#board{
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    cursor: pointer;
+    position: relative;
+}
+.tile{ color:gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftborder{
+    border-left: 0.3em solid aqua;  
+}
+.topborder{
+    border-top: 0.3em solid aqua;
+}
+.strike{
+    position: absolute;
+    background-color: orange;
+
+}
+.strike-row-1{
+    width: 100%;
+    height: 4px;
+    top: 16%;
+}
+.strike-row-2{
+    width: 100%;
+    height: 4px;
+    top: 50.5%;
+}
+.strike-row-3{
+    width: 100%;
+    height: 4px;
+    top: 84%;
+}
+.strike-column-3{
+    height: 100%;
+    width: 4px;
+    right: 15%;   
+}
+.strike-column-2{
+    height: 100%;
+    width: 4px;
+    right: 48.5%;   
+}
+.strike-column-1{
+    height: 100%;
+    width: 4px;
+    right: 83%;   
+}
+.strike-diagonal-1{
+    width: 94%;
+    height: 5px;
+    top:51%;
+    right: 1%;
+    transform: skewY(45deg);
+
+}
+.strike-diagonal-2{
+    width: 94%;
+    height: 5px;
+    top:51%;
+    right: 3%;
+    transform: skewY(-45deg);
+}
+#board {
+    font-size: 48px;
+}
+#winnerbox{
+    text-align: center;
+    align-content: center;
+    border: rgb(244, 245, 241) 10px solid;
+    padding: 30px;
+    margin:10px;
+    font-size:36px;
+}
+#NewGame{
+    background-color: transparent;
+    color: currentColor;
+    border: 3px solid cornsilk;
+    font-size: 1.5em;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display:block;
+}
+.x-hover:hover::after{
+    content:"X";
+    opacity: 0.6;
+}
+.o-hover:hover::after{
+    content:"O";
+    opacity: 0.6;
+}
