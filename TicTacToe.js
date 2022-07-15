@@ -105,7 +105,7 @@ gameOverSound.play();
 
 function startNewGame() {
   strike.className ="strike"
-  gameOverScreen.className ="hidden"
+  winnerbox.className ="hidden"
   boardState.fill(null);
   tiles.forEach((tile) => (tile.innerText =""));
   turn = Player_X;
