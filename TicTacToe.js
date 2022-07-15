@@ -112,3 +112,4 @@ function startNewGame() {
   setHoverText();
 
 }
+//checking git
